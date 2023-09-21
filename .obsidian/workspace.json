@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ООП, паттерны GOF.md",
+                "file": "Тестирование.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ООП, паттерны GOF.md",
+                "file": "Тестирование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ООП, паттерны GOF.md",
+                "file": "Тестирование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ООП, паттерны GOF.md"
+                "file": "Тестирование.md"
               }
             }
           }
@@ -233,6 +233,7 @@
   },
   "active": "c3bad67fa7218288",
   "lastOpenFiles": [
+    "ООП, паттерны GOF.md",
     "data/clean.jpg",
     "data/0_5qiQ0O4N2JIfTCGp.png",
     "System design.md",
@@ -249,7 +250,6 @@
     "Многопоточное программирование.md",
     "Тестирование.md",
     "Базы данных.md",
-    "Алгоритмы и структуры данных.md",
-    "ООП, паттерны GOF.md"
+    "Алгоритмы и структуры данных.md"
   ]
 }
