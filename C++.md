@@ -101,7 +101,7 @@ template<class T>
 void func(T&& arg);
 ```
 
-**std::move** - каст в rvalue
+**std::move** - каст в rvalue  
 **std::forward** - каст в lvalue, если получили аргументом lvalue, в rvalue, если получили rvalue.
 
 ### Множественное наследование (diamond problem)
