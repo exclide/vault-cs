@@ -227,10 +227,11 @@ auto f = [](int a, int b) { return a < b; };
 ```cpp
 auto f = [](int a, int b) -> bool { return a < b; }; //можно указывать возврат знач.
 
-std::vector<int> v{1, 4, 3, 2};
-std::ranges::sort(v, [](auto a, auto b) { return a < b; }); //можно выводить тип аргументов в таких сценариях
-
 auto bar = []<class T>(const T& a, const T& b) { return a < b; }; //поддерживают шаблоны
+
+std::vector<int> v{1, 4, 3, 2};
+std::ranges::sort(v, [](const auto& a, const auto& b) { return a < b; }); //auto аргументы лямбды - сахар над шаблонами
+
 ```
 
 ### Variadic templates
