@@ -207,7 +207,7 @@ use_count - возвращает количество shared_ptr которые 
 ```cpp
 template<class T>
 struct less {
-	bool operator=(T a, T b) {
+	bool operator()(T& a, T& b) {
 		return a < b;
 	}
 }
