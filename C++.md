@@ -207,7 +207,7 @@ use_count - возвращает количество shared_ptr которые 
 ```cpp
 template<class T>
 struct less {
-	bool operator()(T& a, T& b) {
+	bool operator()(const T& a, const T& b) {
 		return a < b;
 	}
 }
@@ -223,6 +223,15 @@ auto f = [](int a, int b) { return a < b; };
 [=, &y] //все копии, но y по ссылке
 ```
 В [] - пишем переменные, которые хотим захватить для дальнейшего использования в функции, можем захватывать по копии или ссылке.
+
+```cpp
+auto f = [](int a, int b) -> bool { return a < b; }; //можно указывать возврат знач.
+
+std::vector<int> v{1, 4, 3, 2};
+std::ranges::sort(v, [](auto a, auto b) { return a < b; }); //можно выводить тип аргументов в таких сценариях
+
+auto bar = []<class T>(const T& a, const T& b) { return a < b; }; //поддерживают шаблоны
+```
 
 ### Variadic templates
 Позволяет передавать переменное количество аргументов для функции/класса
