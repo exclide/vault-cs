@@ -30,9 +30,10 @@ s.connect(endpoint);
 Конструкторы:  
 acceptor(ioc);  
 acceptor(ioc, endpoint, true) - автоматически делает open, bind, listen, reuse_adr  
-bind -> a.bind() - системный вызов к ОС на выдачу порта  
+open -> a.open(protocol) - открывает сокет с указанным протоколом (tcp/udp)
+bind -> a.bind(endpoint) - привязывает сокет к указанному local endpoint (IP:Port)
 listen -> a.listen() - начинаем слушать сокет  
-accept -> a.accept() - принять соединение  
+accept -> a.accept() - принять соединение, вернув сокет с парой endpoint, связанным с конкретным соединением
 
 ### acceptor a(ioc, endpoint);  
 Конструктор acceptor выше эквивалентен  
